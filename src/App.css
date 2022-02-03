@@ -1,38 +1,102 @@
-.App {
+body {
+  margin: 2rem;
+  background-color: rgb(245, 245, 245);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+.loading {
+  text-align: center;
+  font-size: 2rem;
+  color: skyblue;
+}
+.tours {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+.tours h2 {
+  font-size: 3rem;
+}
+.underline {
+  height: 0.25rem;
+  width: 10rem;
+  margin: auto;
+  margin-top: -2rem;
+  background-color: rgb(5, 180, 233);
+}
+.text-center {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tours h2 {
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.single-tour {
+  /* height: 40rem; */
+  width: 30rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 5px;
+  margin: 3rem 0;
+  box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.5);
+  padding: 2rem 0;
+  padding-top: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.single-tour img {
+  width: 100%;
+  overflow: hidden;
+  background-position: center;
+  object-fit: cover;
+}
+.tour-info {
+  margin: 1rem 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.price {
+  border-radius: 6px;
+  padding: 0.2rem 1rem;
+  background-color: rgba(5, 180, 233, 0.2);
+  float: right;
+  margin: 0;
+  display: inline;
+  font-size: 1.4rem;
+  color: rgb(5, 180, 233);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tour-info h3 {
+  display: inline;
+  font-size: 1.4rem;
+  color: rgb(5, 180, 233);
+}
+
+.lead {
+  font-size: 1rem;
+  color: gray;
+  margin: 2rem 0;
+}
+.btn {
+  border: 2px solid red;
+  color: red;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 0.5rem 1.7rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  cursor: pointer;
+}
+.btn-read {
+  color: rgb(5, 180, 233);
+  font-size: 1rem;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+}
+.btn:hover {
+  background-color: rgba(255, 0, 0, 0.1);
 }
